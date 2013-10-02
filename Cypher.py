@@ -17,7 +17,7 @@ def item_to_str(item):
         else:
             return "(%s %s)" % (id_, data)
     else:
-        return str(item)
+        return str(item.encode('utf-8'))
 
 
 def print_table(headers, items):
